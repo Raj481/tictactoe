@@ -2,6 +2,7 @@
 
 import 'package:abrtictactoe/controllers/game_controller.dart';
 import 'package:abrtictactoe/controllers/player_controller.dart';
+import 'package:abrtictactoe/controllers/settings_controller.dart';
 import 'package:abrtictactoe/ui/win/winning_screen.dart';
 import 'package:abrtictactoe/utils/audio_res.dart';
 import 'package:abrtictactoe/widgets/custom_container.dart';
@@ -317,8 +318,11 @@ class _GameBoardState extends State<GameBoard> {
     required GameController game,
     required PlayerController player}) {
     final audioController = context.read<AudioController>();
+    final settingController = context.read<SettingsController>();
     if(!game.isValidMove(row, col)){
-      audioController.playAudio(AudioRes.beep);
+      if(settingController.audioOn.value) {
+        audioController.playAudio(AudioRes.beep);
+      }
       return;
     }
 
@@ -326,7 +330,9 @@ class _GameBoardState extends State<GameBoard> {
     game.makeMove(row, col);
     var isWin = game.checkWinner();
     if(isWin) {
-      audioController.playAudio(AudioRes.playfulCasino2);
+      if(settingController.audioOn.value) {
+        audioController.playAudio(AudioRes.playfulCasino2);
+      }
       showWinnerDialog(game.currentPlayer!.name ?? "");
     }
   }
