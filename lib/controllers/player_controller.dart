@@ -5,7 +5,7 @@ import '../models/player.dart';
 
 class PlayerController extends ChangeNotifier {
 
-  List<Player> _playerList = [];
+  final List<Player> _playerList = [];
   List<Player> get getPlayer => _playerList;
 
   TextEditingController textController = TextEditingController();

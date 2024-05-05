@@ -8,7 +8,6 @@ import '../app_lifecycle/app_lifecycle.dart';
 class AudioController {
   static final _log = Logger('AudioController');
   late final AudioPlayer _audioPlayer;
-  PlayerState? _playerState;
   SettingsController? _settings;
   ValueNotifier<AppLifecycleState>? _lifecycleNotifier;
 

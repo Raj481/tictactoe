@@ -326,7 +326,7 @@ class _GameBoardState extends State<GameBoard> {
     game.makeMove(row, col);
     var isWin = game.checkWinner();
     if(isWin) {
-      audioController.playAudio(AudioRes.playful_casino_2);
+      audioController.playAudio(AudioRes.playfulCasino2);
       showWinnerDialog(game.currentPlayer!.name ?? "");
     }
   }
