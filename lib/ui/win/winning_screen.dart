@@ -92,7 +92,7 @@ class _WinningScreenState extends State<WinningScreen> {
                                 style: AppStyle.looserHeadingStyle,
                               ),
                               Text(
-                                widget.winner,
+                                widget.looser,
                                 style: AppStyle.winnerTextStyle,
                               )
                             ],
