@@ -1,7 +1,7 @@
 
 import 'package:abrtictactoe/utils/image_res.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+// import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 /// import custom package
 import '../../utils/color_res.dart';
@@ -30,7 +30,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         children: [
           CustomAppBar(
             leading: InkWell(
-              onTap: () => context.pop(),
+              onTap: () => Navigator.pop(context),
               borderRadius: BorderRadius.circular(10),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),

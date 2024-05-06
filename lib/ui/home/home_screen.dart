@@ -1,7 +1,7 @@
 import 'package:abrtictactoe/route/router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:go_router/go_router.dart';
+//import 'package:go_router/go_router.dart';
 import '../../style/app_styles.dart';
 /// import custom package
 import '../../utils/color_res.dart';
@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             trailing: [
 
               InkWell(
-                onTap: () => GoRouter.of(context).push("/${AppRouter.settings}"),
+                onTap: () => Navigator.of(context).pushNamed("/${AppRouter.appSettings}"),
                 borderRadius: BorderRadius.circular(10),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         CustomButton(
                           title: StringRes.play.toUpperCase(),
-                          onTap: () => GoRouter.of(context).push("/${AppRouter.playerScreen}"),)
+                          onTap: () => Navigator.of(context).pushNamed("/${AppRouter.playerScreen}"),)
                       ],
                     ),
                     const SizedBox(height: 10,),

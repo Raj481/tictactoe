@@ -14,7 +14,7 @@ dependencies:
   logging: ^1.2.0
   shared_preferences: ^2.2.3
   audioplayers: ^6.0.0
-  go_router: ^14.0.2
+  #go_router: ^14.0.2
   ###--- state management ---###
   provider: ^6.1.2
 

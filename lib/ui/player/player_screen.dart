@@ -4,7 +4,7 @@ import 'package:abrtictactoe/models/player.dart';
 import 'package:abrtictactoe/route/router.dart';
 import 'package:abrtictactoe/utils/custom_ui.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+// import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 // import custom package
 import '../../style/app_styles.dart';
@@ -34,7 +34,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
             children: [
               CustomAppBar(
                 leading: InkWell(
-                  onTap: () => context.pop(),
+                  onTap: () => Navigator.pop(context),
                   borderRadius: BorderRadius.circular(10),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -105,15 +105,28 @@ class _PlayerScreenState extends State<PlayerScreen> {
                                           ),
                                         ],
                                       ),
-                                      InkWell(
-                                        onTap: () => value.removePlayer(index),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(5.0),
-                                          child: Icon(
-                                            Icons.delete,
-                                            color: ColorRes.white,
+                                      Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Image(
+                                            image: AssetImage(
+                                                value.getPlayer[index].icon!
+                                            ),
+                                            height: 18,
+                                            width: 18,
                                           ),
-                                        ),
+                                          const SizedBox(width: 8,),
+                                          InkWell(
+                                            onTap: () => value.removePlayer(index),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(5.0),
+                                              child: Icon(
+                                                Icons.delete,
+                                                color: ColorRes.white,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       )
                                     ],
                                   ),
@@ -138,7 +151,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                            children: [
                              CustomButton(
                                title: StringRes.start.toUpperCase(),
-                               onTap: () => GoRouter.of(context).push("/${AppRouter.gameScreen}")
+                               onTap: () => Navigator.of(context).pushNamed("/${AppRouter.gameScreen}")
                                ,)
                            ],
                          ),
@@ -196,7 +209,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               InkWell(
                                 onTap: () {
                                   controller.resetPlayer();
-                                  context.pop();
+                                  Navigator.pop(context);
                                 },
                                 borderRadius: BorderRadius.circular(10),
                                 child: Center(
@@ -331,16 +344,16 @@ class _PlayerScreenState extends State<PlayerScreen> {
                                   return;
                                 }
 
+                                if(controller.playerIcon.trim().isEmpty) {
+                                  CustomUi.showToast(context, StringRes.pleaseSelectAIcon);
+                                  return;
+                                }
+
                                 if(controller.getPlayer.isNotEmpty){
                                   if(controller.getPlayer.first.icon!.contains(controller.playerIcon)){
                                     CustomUi.showToast(context, StringRes.msgFollowingIconAlreadySelected);
                                     return;
                                   }
-                                }
-
-                                if(controller.playerIcon.trim().isEmpty) {
-                                  CustomUi.showToast(context, StringRes.pleaseSelectAIcon);
-                                  return;
                                 }
 
                                 controller.addPlayer(
@@ -350,7 +363,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                                     )
                                 );
                                 controller.resetPlayer();
-                                context.pop();
+                                Navigator.pop(context);
                               },
                             )
                           ],

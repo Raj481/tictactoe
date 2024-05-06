@@ -1,5 +1,4 @@
 
-
 import 'package:abrtictactoe/controllers/game_controller.dart';
 import 'package:abrtictactoe/controllers/player_controller.dart';
 import 'package:abrtictactoe/route/router.dart';
@@ -7,14 +6,13 @@ import 'package:abrtictactoe/style/app_styles.dart';
 import 'package:abrtictactoe/utils/image_res.dart';
 import 'package:abrtictactoe/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+// import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 import '../../utils/color_res.dart';
 import '../../utils/string_res.dart';
 
 class WinningScreen extends StatefulWidget {
-
   final String winner;
   const WinningScreen({
     super.key,
@@ -95,9 +93,9 @@ class _WinningScreenState extends State<WinningScreen> {
                           onTap: () {
                             context.read<PlayerController>().reset();
                             context.read<GameController>().reset();
-                            GoRouter.of(context)
-                                .pushReplacement(
-                                "/${AppRouter.home}");
+                            Navigator.of(context)
+                                .pushNamedAndRemoveUntil(
+                                "/${AppRouter.home}", (route) => false);
                           },)
                       ],
                     ),

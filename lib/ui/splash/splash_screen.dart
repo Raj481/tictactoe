@@ -1,7 +1,7 @@
 
 import 'package:abrtictactoe/utils/image_res.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+//import 'package:go_router/go_router.dart';
 import '../../route/router.dart';
 /// import custom package
 import '../../utils/color_res.dart';
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       Future.delayed(const Duration(seconds: 3),(){
-        GoRouter.of(context).pushReplacement("/${AppRouter.home}");
+        Navigator.of(context).pushReplacementNamed("/${AppRouter.home}");
       });
     });
     super.initState();

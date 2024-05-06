@@ -36,13 +36,11 @@ class App extends StatelessWidget {
           ],
           child: Builder(
               builder: (_ ){
-                return MaterialApp.router(
+                return MaterialApp(
                   title: StringRes.appName,
-                  routeInformationProvider: AppRouter.router.routeInformationProvider,
-                  routeInformationParser: AppRouter.router.routeInformationParser,
-                  routerDelegate: AppRouter.router.routerDelegate,
                   debugShowCheckedModeBanner: false,
                   themeMode: ThemeMode.dark,
+                  onGenerateRoute: AppRouter.generateRoute,
                 );
               }
           ),
