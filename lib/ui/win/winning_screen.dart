@@ -14,9 +14,11 @@ import '../../utils/string_res.dart';
 
 class WinningScreen extends StatefulWidget {
   final String winner;
+  final String looser;
   const WinningScreen({
     super.key,
-    required this.winner
+    required this.winner,
+    required this.looser
   });
 
   @override
@@ -62,27 +64,40 @@ class _WinningScreenState extends State<WinningScreen> {
                         ),
                       ],
                     ),
-                    Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              StringRes.winner.toUpperCase(),
-                              style: AppStyle.winnerHeadingStyle,
-                            )
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              widget.winner,
-                              style: AppStyle.winnerTextStyle,
-                            )
-                          ],
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 25
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                StringRes.winner.toUpperCase(),
+                                style: AppStyle.winnerHeadingStyle,
+                              ),
+                              Text(
+                                widget.winner,
+                                style: AppStyle.winnerTextStyle,
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                StringRes.looser.toUpperCase(),
+                                style: AppStyle.looserHeadingStyle,
+                              ),
+                              Text(
+                                widget.winner,
+                                style: AppStyle.winnerTextStyle,
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                     const SizedBox(height: 25,),
                     Row(

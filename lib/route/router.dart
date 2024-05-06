@@ -61,7 +61,7 @@ class AppRouter {
       case '/$playerScreen':
         return MaterialPageRoute(builder: (_) => const PlayerScreen(key: Key(playerScreen)));
       case '/$winningScreen':
-        return MaterialPageRoute(builder: (_) => const WinningScreen(key: Key(winningScreen), winner: '',),);
+        return MaterialPageRoute(builder: (_) => const WinningScreen(key: Key(winningScreen), winner: '', looser: '',),);
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

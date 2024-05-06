@@ -17,6 +17,7 @@ class StringRes {
   static String get score => "Score";
   static String get detail => "Detail";
   static String get winner => "Winner";
+  static String get looser => "Looser";
   static String get addPlayer => "Add Player";
   static String get selectIcon => "Select Icon";
   static String get termsAndConditions => "Terms and Conditions";

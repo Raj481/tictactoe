@@ -143,7 +143,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                             )
                           ],
                         ),
-                      if(value.getPlayer.isNotEmpty)
+                      if(value.getPlayer.length == 2)
                        ...[
                          const SizedBox(height: 15,),
                          Row(

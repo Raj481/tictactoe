@@ -16,6 +16,11 @@ class AppStyle {
     fontFamily: FontRes.permanentMarker,
     fontSize: 18
   );
+  static TextStyle get looserHeadingStyle => TextStyle(
+    color: ColorRes.white,
+    fontFamily: FontRes.permanentMarker,
+    fontSize: 18
+  );
   static TextStyle get winnerTextStyle => TextStyle(
     color: ColorRes.white,
     fontFamily: FontRes.permanentMarker,

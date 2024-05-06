@@ -333,18 +333,27 @@ class _GameBoardState extends State<GameBoard> {
       if(settingController.audioOn.value) {
         audioController.playAudio(AudioRes.playfulCasino2);
       }
-      showWinnerDialog(game.currentPlayer!.name ?? "");
+      var looser = game.findLooser();
+      showWinnerDialog(
+          game.currentPlayer!.name ?? "",
+          looser
+      );
     }
   }
 
-  showWinnerDialog(String winnerName){
+  showWinnerDialog(
+      String winnerName,
+      String looserName,
+      ){
     showGeneralDialog(
         context: context,
         barrierLabel: "Barrier",
         barrierDismissible: false,
         barrierColor: ColorRes.black.withOpacity(.3),
         pageBuilder: (_,___, __){
-          return WinningScreen(winner: winnerName,);
+          return WinningScreen(
+            winner: winnerName,
+            looser: looserName,);
         }
     );
   }

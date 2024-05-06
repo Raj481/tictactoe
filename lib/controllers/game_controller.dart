@@ -78,6 +78,18 @@ class GameController extends ChangeNotifier {
     //     board[row][col] == "";
   }
 
+  String findLooser(){
+    var str = "";
+     if(_playerList.isNotEmpty){
+       var list = _playerList.where(
+               (element) => (currentPlayer != null)
+                   && !currentPlayer!.name!.contains(element.name!)).toList();
+       if(list.isNotEmpty) {
+         str = list.first.name ?? "";
+       }
+     }
+    return str;
+  }
   void makeMove(int row, int col) {
 
     if (isValidMove(row, col)) {
