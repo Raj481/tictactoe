@@ -31,6 +31,7 @@ class _WinningScreenState extends State<WinningScreen> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return PopScope(
+        canPop: false,
         child: Scaffold(
           backgroundColor: ColorRes.transparent,
           body: Column(
