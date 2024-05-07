@@ -59,11 +59,13 @@ Audio Players: Playing audio for app
 Shared Preferences: for storing some information like audio on/off for maintaining in app storage
 
 Credits
-This Tic-Tac-Toe game was developed by **Rajesh Regar** and is released under the **MIT**. 
+
+ This Tic-Tac-Toe game was developed by **Rajesh Regar** and is released under the **MIT**. 
+
 Contributions and feedback are welcome.
 
 Support
-For any questions or issues, please contact email rajeshregar481@gmai.com or +916377845493.
+For any questions or issues, please contact email **rajeshregar481@gmai.com**.
 
 This documentation provides a comprehensive guide to the Tic-Tac-Toe game implemented in Flutter.
 Players can enjoy a classic game of Tic-Tac-Toe with features such as interactive gameplay, 
