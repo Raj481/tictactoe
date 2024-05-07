@@ -14,16 +14,15 @@ Installation
 To run the Tic-Tac-Toe game on your device, follow these steps:
 
 Clone the Repository: Clone the repository from GitHub.
+
 bash
-Copy code
-git clone https://github.com/your-repo/tic_tac_toe_flutter.git
+git clone https://github.com/Raj481/tictactoe.git
 Navigate to Project Directory: Move into the project directory.
+
 bash
-Copy code
 cd tic_tac_toe_flutter
 Run the App: Run the app using Flutter.
-arduino
-Copy code
+
 flutter run
 
 Usage
