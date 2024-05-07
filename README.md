@@ -76,7 +76,7 @@ winning detection, restart options, and more.
 
 
 Screenshot:
-<img src="/screenshot/img1.jpeg" alt="image" width="300" height="400">
+<img src="/screenshot/img1.jpeg" alt="image" width="320" height="480">
 ![img1.jpeg](screenshot%2Fimg1.jpeg)
 ![img2.jpeg](screenshot%2Fimg2.jpeg)
 ![img3.jpeg](screenshot%2Fimg3.jpeg)
