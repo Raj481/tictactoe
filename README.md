@@ -77,3 +77,9 @@ winning detection, restart options, and more.
 
 Screenshot:
 ![img1.jpeg](screenshot%2Fimg1.jpeg)
+![img2.jpeg](screenshot%2Fimg2.jpeg)
+![img3.jpeg](screenshot%2Fimg3.jpeg)
+![img4.jpeg](screenshot%2Fimg4.jpeg)
+![img5.jpeg](screenshot%2Fimg5.jpeg)
+![img6.jpeg](screenshot%2Fimg6.jpeg)
+![img7.jpeg](screenshot%2Fimg7.jpeg)
