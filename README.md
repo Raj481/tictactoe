@@ -77,10 +77,9 @@ winning detection, restart options, and more.
 
 Screenshot:
 <img src="/screenshot/img1.jpeg" alt="image" width="320px" height="520px">
-![img1.jpeg](screenshot%2Fimg1.jpeg)
-![img2.jpeg](screenshot%2Fimg2.jpeg)
-![img3.jpeg](screenshot%2Fimg3.jpeg)
-![img4.jpeg](screenshot%2Fimg4.jpeg)
-![img5.jpeg](screenshot%2Fimg5.jpeg)
-![img6.jpeg](screenshot%2Fimg6.jpeg)
-![img7.jpeg](screenshot%2Fimg7.jpeg)
+<img src="/screenshot/img2.jpeg" alt="image" width="320px" height="520px">
+<img src="/screenshot/img3.jpeg" alt="image" width="320px" height="520px">
+<img src="/screenshot/img4.jpeg" alt="image" width="320px" height="520px">
+<img src="/screenshot/img5.jpeg" alt="image" width="320px" height="520px">
+<img src="/screenshot/img6.jpeg" alt="image" width="320px" height="520px">
+<img src="/screenshot/img7.jpeg" alt="image" width="320px" height="520px">
