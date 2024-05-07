@@ -76,4 +76,4 @@ winning detection, restart options, and more.
 
 
 Screenshot:
-![plot][WhatsApp Image 2024-05-08 at 00.30.37.jpeg](..%2F..%2F..%2FFreelance%2FTickTock%2FScreenshot%20App%2FWhatsApp%20Image%202024-05-08%20at%2000.30.37.jpeg)
+<img alt="WhatsApp Image 2024-05-08 at 00.30.37.jpeg" height="500" src="..%2F..%2F..%2FFreelance%2FTickTock%2FScreenshot%20App%2FWhatsApp%20Image%202024-05-08%20at%2000.30.37.jpeg" width="320"/>
