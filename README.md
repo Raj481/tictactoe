@@ -76,10 +76,10 @@ winning detection, restart options, and more.
 
 # **Screenshot**:
 
-<img src="/screenshot/img1.jpeg" alt="image" width="320px" height="520px">
-<img src="/screenshot/img2.jpeg" alt="image" width="320px" height="520px">
-<img src="/screenshot/img3.jpeg" alt="image" width="320px" height="520px">
-<img src="/screenshot/img4.jpeg" alt="image" width="320px" height="520px">
-<img src="/screenshot/img5.jpeg" alt="image" width="320px" height="520px">
-<img src="/screenshot/img6.jpeg" alt="image" width="320px" height="520px">
-<img src="/screenshot/img7.jpeg" alt="image" width="320px" height="520px">
+<img src="/screenshot/img1.jpeg" alt="image" width="320px" height="680px">
+<img src="/screenshot/img2.jpeg" alt="image" width="320px" height="680px">
+<img src="/screenshot/img3.jpeg" alt="image" width="320px" height="680px">
+<img src="/screenshot/img4.jpeg" alt="image" width="320px" height="680px">
+<img src="/screenshot/img5.jpeg" alt="image" width="320px" height="680px">
+<img src="/screenshot/img6.jpeg" alt="image" width="320px" height="680px">
+<img src="/screenshot/img7.jpeg" alt="image" width="320px" height="680px">
