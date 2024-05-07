@@ -17,6 +17,7 @@ Clone the Repository: Clone the repository from GitHub.
 
 bash
 git clone https://github.com/Raj481/tictactoe.git
+
 Navigate to Project Directory: Move into the project directory.
 
 bash
@@ -68,3 +69,6 @@ For any questions or issues, please contact email **rajeshregar481@gmai.com**.
 This documentation provides a comprehensive guide to the Tic-Tac-Toe game implemented in Flutter.
 Players can enjoy a classic game of Tic-Tac-Toe with features such as interactive gameplay, 
 winning detection, restart options, and more.
+
+
+Screenshot:
