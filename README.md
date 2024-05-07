@@ -1,20 +1,21 @@
 # abrtictactoe
 
-Overview
+# Overview
 This documentation provides an overview of the Tic-Tac-Toe game implemented in Flutter. 
 Tic-Tac-Toe is a classic two-player game where players take turns marking spaces 
 in a 3x3 grid with their respective symbols (usually 'X' and 'O') with the objective of 
 getting three of their symbols in a row, column, or diagonal.
 
 
-Features
+# Features
 Interactive Gameplay: Players can tap on empty cells to place their symbols ('X' or 'O') during their turn.
 Winning Detection: The game automatically detects when a player has won by aligning three symbols in a row, column, or diagonal.
 Draw Detection: If all cells are filled without any player achieving a winning combination, the game declares a draw.
 Restart Option: Players can restart the game at any time to start a new match.
 Turn Indicator: Displays which player's turn it is (Player 1 or Player 2).
 Scoreboard: Keeps track of the number of wins for each player.
-Installation
+
+# Installation
 To run the Tic-Tac-Toe game on your device, follow these steps:
 
 Clone the Repository: Clone the repository from GitHub.
@@ -30,7 +31,7 @@ Run the App: Run the app using Flutter.
 
 flutter run
 
-Usage
+# Usage
 
 Once the app is running on your device or emulator, you can start playing Tic-Tac-Toe. 
 Here's how to play:
@@ -43,7 +44,7 @@ Draw: If all cells are filled without any player achieving a winning combination
 Restart: At any point during the game, players can restart the match by tapping on the restart button.
 Structure
 
-The project is structured as follows:
+**The project is structured as follows:**
 
 lib/: Contains the Dart code for the Tic-Tac-Toe game.
 main.dart: Entry point for the Flutter application.
@@ -53,7 +54,7 @@ player_controller.dart: Logic for players state management.
 player_screen.dart: Widget for adding player, remove player, show player list, select icon for player.
 settings_screen.dart: Widget for on/off audio, other app description option of app.
 
-Dependencies
+# Dependencies
 The Tic-Tac-Toe game for Flutter has the following dependencies:
 
 Flutter SDK: The Flutter framework for building native applications.
@@ -63,11 +64,11 @@ Logging: Check for app functionality
 Audio Players: Playing audio for app
 Shared Preferences: for storing some information like audio on/off for maintaining in app storage
 
-Credits
+# Credits
 This Tic-Tac-Toe game was developed by **Rajesh Regar** and is released under the **MIT**.
 Contributions and feedback are welcome.
 
-Support
+# Support
 For any questions or issues, please contact email **rajeshregar481@gmai.com**.
 
 This documentation provides a comprehensive guide to the Tic-Tac-Toe game implemented in Flutter.
