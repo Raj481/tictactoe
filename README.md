@@ -1,7 +1,11 @@
 # abrtictactoe
 
 Overview
-This documentation provides an overview of the Tic-Tac-Toe game implemented in Flutter. Tic-Tac-Toe is a classic two-player game where players take turns marking spaces in a 3x3 grid with their respective symbols (usually 'X' and 'O') with the objective of getting three of their symbols in a row, column, or diagonal.
+This documentation provides an overview of the Tic-Tac-Toe game implemented in Flutter. 
+Tic-Tac-Toe is a classic two-player game where players take turns marking spaces 
+in a 3x3 grid with their respective symbols (usually 'X' and 'O') with the objective of 
+getting three of their symbols in a row, column, or diagonal.
+
 
 Features
 Interactive Gameplay: Players can tap on empty cells to place their symbols ('X' or 'O') during their turn.
