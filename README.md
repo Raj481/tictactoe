@@ -45,7 +45,7 @@ main.dart: Entry point for the Flutter application.
 game_board.dart: Widget for displaying the game board.
 game_controller.dart: Logic for game state management, including detecting wins and draws.
 player_controller.dart: Logic for players state management.
-player_screen.dart: Widget for adding player, remove player, show player list.
+player_screen.dart: Widget for adding player, remove player, show player list, select icon for player.
 settings_screen.dart: Widget for on/off audio, other app description option of app.
 
 Dependencies
