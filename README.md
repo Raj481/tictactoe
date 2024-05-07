@@ -74,8 +74,8 @@ This documentation provides a comprehensive guide to the Tic-Tac-Toe game implem
 Players can enjoy a classic game of Tic-Tac-Toe with features such as interactive gameplay, 
 winning detection, restart options, and more.
 
+# **Screenshot**:
 
-Screenshot:
 <img src="/screenshot/img1.jpeg" alt="image" width="320px" height="520px">
 <img src="/screenshot/img2.jpeg" alt="image" width="320px" height="520px">
 <img src="/screenshot/img3.jpeg" alt="image" width="320px" height="520px">
