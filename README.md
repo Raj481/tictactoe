@@ -59,9 +59,7 @@ Audio Players: Playing audio for app
 Shared Preferences: for storing some information like audio on/off for maintaining in app storage
 
 Credits
-
- This Tic-Tac-Toe game was developed by **Rajesh Regar** and is released under the **MIT**. 
-
+This Tic-Tac-Toe game was developed by **Rajesh Regar** and is released under the **MIT**.
 Contributions and feedback are welcome.
 
 Support
